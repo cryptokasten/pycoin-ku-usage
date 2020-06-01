@@ -145,7 +145,7 @@ ku --json -n XTN -s "1" tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY
 }
 #+end_src
 
-** Create a hardended child key
+** Create a hardened child key
 
 #+BEGIN_SRC sh :results replace code
 ku --json -n XTN -s "1'" tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fLzJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG
