@@ -16,172 +16,177 @@ Python modules:
 ** Create key
 
 #+BEGIN_SRC sh :results replace code
-ku -n XTN create
+ku --json -n XTN create
 #+END_SRC
 
 #+RESULTS:
 #+begin_src sh
-input                        : create
-network                      : Bitcoin testnet3
-symbol                       : XTN
-wallet key                   : tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fL\
-                                 zJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG
-public version               : tpubD6NzVbkrYhZ4YosceoNrQJmj2WYodUz19Ujxm28QGfEmZnqadAb8L1DrWMx6b3\
-                                 icdo8Zg7cPEzYhWzryeeFwumu3WU1JUwy9aBuDZ2ktyXQ
-tree depth                   : 0
-fingerprint                  : 57f3ff57
-parent f'print               : 00000000
-child index                  : 0
-chain code                   : f813c6b2d9ce36eac57e9954471d75d287e385ce8d8193a7780d1c2919d0fede
-private key                  : yes
-secret exponent              : 50278011261775477826002692554057851747671620487616390030698413698607664282679
- hex                         : 6f28588e2a435db5e3166c630067ba7b8c4fdf2455c635d9dbc5fb90dd4f3c37
-wif                          : cRJn3jdsNELk5oefYT4SfSJaGoq2dwpfbnwcuYkJ2Q2vPLBcMhZn
- uncompressed                : 92RsXynWY6Hi2YQwVsmHEhAsawZdd1e5fhKGPKyUscaWmY3Dwd1
-public pair x                : 66140124750649504267710947627088163136169929420042544183636129436858109589521
-public pair y                : 23359007489798498367317204813269751391270676355378293725647319241004639992811
- x as hex                    : 9239fbe752cbfa111ff310bbb93f9e298ce4a9bde1cae8337fb751082d46f811
- y as hex                    : 33a4bace8d1799420200adc19f3542ca6133eed2dd0d6831de7921f2b52a3beb
-y parity                     : odd
-key pair as sec              : 039239fbe752cbfa111ff310bbb93f9e298ce4a9bde1cae8337fb751082d46f811
- uncompressed                : 049239fbe752cbfa111ff310bbb93f9e298ce4a9bde1cae8337fb751082d46f811\
-                                 33a4bace8d1799420200adc19f3542ca6133eed2dd0d6831de7921f2b52a3beb
-hash160                      : 57f3ff5765f00500b8541877e4d473c08ed90dec
- uncompressed                : 94e660ff9703476bb4833bd29fbb353640b4afec
-Bitcoin address              : moY1Nytnr4h7jC4xJTrqDLZNGEfGKjamLp
-Bitcoin address uncompressed : mu6GHT99uP1sCS5HKjbtGAfd8NNZBCsLjQ
-Bitcoin segwit address       : tb1q2lel74m97qzspwz5rpm7f4rncz8djr0vzh9ptr
-p2sh segwit                  : 2MvitxRjmVWvBzjXeB3RXbFUQisWBx3F3fw
- corresponding p2sh script   : 001457f3ff5765f00500b8541877e4d473c08ed90dec
+{
+   "XTN_address": "mkp4ZkwZkVHWFvF2ybWcrQLaG5Kr4x2w6M",
+   "XTN_address_segwit": "tb1q8g2w75dhl2ad8tjl6vflgqnckfy0sfh7x6rzz4",
+   "XTN_address_uncompressed": "mrio84iNRuL1d5g11WM1mKxfPDTz8oW3qj",
+   "address": "mkp4ZkwZkVHWFvF2ybWcrQLaG5Kr4x2w6M",
+   "address_segwit": "tb1q8g2w75dhl2ad8tjl6vflgqnckfy0sfh7x6rzz4",
+   "address_uncompressed": "mrio84iNRuL1d5g11WM1mKxfPDTz8oW3qj",
+   "chain_code": "9d574a3e2ad556f9a7dce50b48456bc7eedfc7cb10de36e67702f41f1ac4e6b1",
+   "child_index": "0",
+   "fingerprint": "3a14ef51",
+   "hash160": "3a14ef51b7fabad3ae5fd313f40278b248f826fe",
+   "hash160_uncompressed": "7ae6b7f46af9743c65a395cafbeb05373dd24a2b",
+   "input": "create",
+   "key_pair_as_sec": "03eb2d40df759dd4287f7290953139b52df8558a07a8fdcdc0ca14cda59054e715",
+   "key_pair_as_sec_uncompressed": "04eb2d40df759dd4287f7290953139b52df8558a07a8fdcdc0ca14cda59054e715124fb9ded836598692bfd565cdf2fc700a9122b1510b51bf8dca503a3fe21f5d",
+   "network": "Bitcoin testnet3",
+   "p2sh_segwit": "2N1U6yDr3TAuUPDBA8H51xxRXeS3iyA6w39",
+   "p2sh_segwit_script": "00143a14ef51b7fabad3ae5fd313f40278b248f826fe",
+   "parent_fingerprint": "00000000",
+   "private_key": "yes",
+   "public_pair_x": "106373475271203395037408000634172882229423148031608764773161787951018621069077",
+   "public_pair_x_hex": "eb2d40df759dd4287f7290953139b52df8558a07a8fdcdc0ca14cda59054e715",
+   "public_pair_y": "8282495023568416888647669022693571854055395964065965647193135550566311796573",
+   "public_pair_y_hex": "124fb9ded836598692bfd565cdf2fc700a9122b1510b51bf8dca503a3fe21f5d",
+   "public_version": "tpubD6NzVbkrYhZ4XuUfhwHwu9uxMyr58JHWMYVZA93sEftNhaHET5f9M5ApHQGuUPsgBwhdKa7UrHakC1xzaoycjoQDW4Vy17sHhR7ontm55XP",
+   "secret_exponent": "20193625364007330996923511822304894572536597744848983532006692007719973476220",
+   "secret_exponent_hex": "2ca52fda0c6ccbf9aed4bec3fbb792908eb8899ff3bdd42c0ecedd9522b0d77c",
+   "symbol": "XTN",
+   "tree_depth": "0",
+   "wallet_key": "tprv8ZgxMBicQKsPeSSspHdMVkFqnxL8xy6bnEtmsd1ZpQ5ys62TpgqZAaYx7DwMTqRozqpGeTxvxe1da2VAwzunNnUQcELLKD5z6zrqoQtMbmP",
+   "wif": "cP5V9p4NuS9dU6VnLkaq91zToZjJuZCm7Y8uE2vE5KMqMYyCYqpP",
+   "wif_uncompressed": "91vaZousjErXvGHwgNCk5Y39LcWXLcPbv8xiHYhc8mwZhwuubTv",
+   "y_parity": "odd"
+}
 #+end_src
 
 ** Get information about a key
 
 #+BEGIN_SRC sh :results replace code
-ku -n XTN tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fLzJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG
+ku --json -n XTN tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fLzJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG
 #+END_SRC
 
 #+RESULTS:
 #+begin_src sh
-input                        : tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fL\
-                                 zJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG
-network                      : Bitcoin testnet3
-symbol                       : XTN
-wallet key                   : tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fL\
-                                 zJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG
-public version               : tpubD6NzVbkrYhZ4YosceoNrQJmj2WYodUz19Ujxm28QGfEmZnqadAb8L1DrWMx6b3\
-                                 icdo8Zg7cPEzYhWzryeeFwumu3WU1JUwy9aBuDZ2ktyXQ
-tree depth                   : 0
-fingerprint                  : 57f3ff57
-parent f'print               : 00000000
-child index                  : 0
-chain code                   : f813c6b2d9ce36eac57e9954471d75d287e385ce8d8193a7780d1c2919d0fede
-private key                  : yes
-secret exponent              : 50278011261775477826002692554057851747671620487616390030698413698607664282679
- hex                         : 6f28588e2a435db5e3166c630067ba7b8c4fdf2455c635d9dbc5fb90dd4f3c37
-wif                          : cRJn3jdsNELk5oefYT4SfSJaGoq2dwpfbnwcuYkJ2Q2vPLBcMhZn
- uncompressed                : 92RsXynWY6Hi2YQwVsmHEhAsawZdd1e5fhKGPKyUscaWmY3Dwd1
-public pair x                : 66140124750649504267710947627088163136169929420042544183636129436858109589521
-public pair y                : 23359007489798498367317204813269751391270676355378293725647319241004639992811
- x as hex                    : 9239fbe752cbfa111ff310bbb93f9e298ce4a9bde1cae8337fb751082d46f811
- y as hex                    : 33a4bace8d1799420200adc19f3542ca6133eed2dd0d6831de7921f2b52a3beb
-y parity                     : odd
-key pair as sec              : 039239fbe752cbfa111ff310bbb93f9e298ce4a9bde1cae8337fb751082d46f811
- uncompressed                : 049239fbe752cbfa111ff310bbb93f9e298ce4a9bde1cae8337fb751082d46f811\
-                                 33a4bace8d1799420200adc19f3542ca6133eed2dd0d6831de7921f2b52a3beb
-hash160                      : 57f3ff5765f00500b8541877e4d473c08ed90dec
- uncompressed                : 94e660ff9703476bb4833bd29fbb353640b4afec
-Bitcoin address              : moY1Nytnr4h7jC4xJTrqDLZNGEfGKjamLp
-Bitcoin address uncompressed : mu6GHT99uP1sCS5HKjbtGAfd8NNZBCsLjQ
-Bitcoin segwit address       : tb1q2lel74m97qzspwz5rpm7f4rncz8djr0vzh9ptr
-p2sh segwit                  : 2MvitxRjmVWvBzjXeB3RXbFUQisWBx3F3fw
- corresponding p2sh script   : 001457f3ff5765f00500b8541877e4d473c08ed90dec
+{
+   "XTN_address": "moY1Nytnr4h7jC4xJTrqDLZNGEfGKjamLp",
+   "XTN_address_segwit": "tb1q2lel74m97qzspwz5rpm7f4rncz8djr0vzh9ptr",
+   "XTN_address_uncompressed": "mu6GHT99uP1sCS5HKjbtGAfd8NNZBCsLjQ",
+   "address": "moY1Nytnr4h7jC4xJTrqDLZNGEfGKjamLp",
+   "address_segwit": "tb1q2lel74m97qzspwz5rpm7f4rncz8djr0vzh9ptr",
+   "address_uncompressed": "mu6GHT99uP1sCS5HKjbtGAfd8NNZBCsLjQ",
+   "chain_code": "f813c6b2d9ce36eac57e9954471d75d287e385ce8d8193a7780d1c2919d0fede",
+   "child_index": "0",
+   "fingerprint": "57f3ff57",
+   "hash160": "57f3ff5765f00500b8541877e4d473c08ed90dec",
+   "hash160_uncompressed": "94e660ff9703476bb4833bd29fbb353640b4afec",
+   "input": "tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fLzJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG",
+   "key_pair_as_sec": "039239fbe752cbfa111ff310bbb93f9e298ce4a9bde1cae8337fb751082d46f811",
+   "key_pair_as_sec_uncompressed": "049239fbe752cbfa111ff310bbb93f9e298ce4a9bde1cae8337fb751082d46f81133a4bace8d1799420200adc19f3542ca6133eed2dd0d6831de7921f2b52a3beb",
+   "network": "Bitcoin testnet3",
+   "p2sh_segwit": "2MvitxRjmVWvBzjXeB3RXbFUQisWBx3F3fw",
+   "p2sh_segwit_script": "001457f3ff5765f00500b8541877e4d473c08ed90dec",
+   "parent_fingerprint": "00000000",
+   "private_key": "yes",
+   "public_pair_x": "66140124750649504267710947627088163136169929420042544183636129436858109589521",
+   "public_pair_x_hex": "9239fbe752cbfa111ff310bbb93f9e298ce4a9bde1cae8337fb751082d46f811",
+   "public_pair_y": "23359007489798498367317204813269751391270676355378293725647319241004639992811",
+   "public_pair_y_hex": "33a4bace8d1799420200adc19f3542ca6133eed2dd0d6831de7921f2b52a3beb",
+   "public_version": "tpubD6NzVbkrYhZ4YosceoNrQJmj2WYodUz19Ujxm28QGfEmZnqadAb8L1DrWMx6b3icdo8Zg7cPEzYhWzryeeFwumu3WU1JUwy9aBuDZ2ktyXQ",
+   "secret_exponent": "50278011261775477826002692554057851747671620487616390030698413698607664282679",
+   "secret_exponent_hex": "6f28588e2a435db5e3166c630067ba7b8c4fdf2455c635d9dbc5fb90dd4f3c37",
+   "symbol": "XTN",
+   "tree_depth": "0",
+   "wallet_key": "tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fLzJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG",
+   "wif": "cRJn3jdsNELk5oefYT4SfSJaGoq2dwpfbnwcuYkJ2Q2vPLBcMhZn",
+   "wif_uncompressed": "92RsXynWY6Hi2YQwVsmHEhAsawZdd1e5fhKGPKyUscaWmY3Dwd1",
+   "y_parity": "odd"
+}
 #+end_src
 
 ** Create a normal child key
 
 #+BEGIN_SRC sh :results replace code
-ku -n XTN -s "1" tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fLzJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG
+ku --json -n XTN -s "1" tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fLzJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG
 #+END_SRC
 
 #+RESULTS:
 #+begin_src sh
-input                        : tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fL\
-                                 zJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG
-network                      : Bitcoin testnet3
-symbol                       : XTN
-wallet key                   : tprv8cDawHNgJ3KQS3XFn4ABzPFtLHsHtyCnfnUX6mGDaiMXXy9AkkDaDr7AFVZgGF\
-                                 S7izpPiLW1xZptv9sx3Rafy2bCTbVWhw3J1Kuhmz5fL44
-public version               : tpubD8ud5hQvSR15KWZ3fhpnPnuzuKPE4JPhF65JPHJWzz9vNTPwP93AQLj2RfVb2h\
-                                 zUFaW9vACviTouzGYHaK2yaZb86Vj4oDAPUM29S6E76GQ
-tree depth                   : 1
-fingerprint                  : 1cc558cf
-parent f'print               : 57f3ff57
-child index                  : 1
-chain code                   : a7083464bd1d3e7cb9e1a37a5fac59d768bbea2ddcc06d68db75727a69203334
-private key                  : yes
-secret exponent              : 10175665611936536960212700543537984959143875691066257925291201954954158514549
- hex                         : 167f38fec0577b4fb9ac4a89e3ccff09546778014f28fb150715174dd70ba175
-wif                          : cNLS4BehAQRmja2H1ncswX48sRmvSR7LbHdLw3b4NoEnRkAL66Tb
- uncompressed                : 91kppPobvndsv9PVYu2LFAXcmWBBJ61XikeEaYQ87JGozp5QE3c
-public pair x                : 72074306871684564231494713060715180251120365778523548577998369770819836750858
-public pair y                : 73026813393901890802572718199560608746253246106782948942250275448403196567861
- x as hex                    : 9f589caf8cc3035c1e6385968391ceb3f300af853678d2926204ab366f24ac0a
- y as hex                    : a173b62e0ec123fc5641520eb4068e24883cee1a8367dbfc23cdccd70ee2e135
-y parity                     : odd
-key pair as sec              : 039f589caf8cc3035c1e6385968391ceb3f300af853678d2926204ab366f24ac0a
- uncompressed                : 049f589caf8cc3035c1e6385968391ceb3f300af853678d2926204ab366f24ac0a\
-                                 a173b62e0ec123fc5641520eb4068e24883cee1a8367dbfc23cdccd70ee2e135
-hash160                      : 1cc558cf0fe8a0a1d99a645ae03cb0b05fcdd2bd
- uncompressed                : 52b6dfece0fc1485e3cfc65e0788079ba79db6b7
-Bitcoin address              : mi95dL2nDYvtA6kRNkjfFD8b4u6JQBiYa1
-Bitcoin address uncompressed : mo4Jn9Abi6nvQFvLGTwBRoAK5a186NmzW7
-Bitcoin segwit address       : tb1qrnz43nc0azs2rkv6v3dwq09skp0um54aq76c8n
-p2sh segwit                  : 2N5W29Hmu4YQcTuhhh1ZR6kWx2YZc3tHDC5
- corresponding p2sh script   : 00141cc558cf0fe8a0a1d99a645ae03cb0b05fcdd2bd
+{
+   "XTN_address": "mi95dL2nDYvtA6kRNkjfFD8b4u6JQBiYa1",
+   "XTN_address_segwit": "tb1qrnz43nc0azs2rkv6v3dwq09skp0um54aq76c8n",
+   "XTN_address_uncompressed": "mo4Jn9Abi6nvQFvLGTwBRoAK5a186NmzW7",
+   "address": "mi95dL2nDYvtA6kRNkjfFD8b4u6JQBiYa1",
+   "address_segwit": "tb1qrnz43nc0azs2rkv6v3dwq09skp0um54aq76c8n",
+   "address_uncompressed": "mo4Jn9Abi6nvQFvLGTwBRoAK5a186NmzW7",
+   "chain_code": "a7083464bd1d3e7cb9e1a37a5fac59d768bbea2ddcc06d68db75727a69203334",
+   "child_index": "1",
+   "fingerprint": "1cc558cf",
+   "hash160": "1cc558cf0fe8a0a1d99a645ae03cb0b05fcdd2bd",
+   "hash160_uncompressed": "52b6dfece0fc1485e3cfc65e0788079ba79db6b7",
+   "input": "tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fLzJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG",
+   "key_pair_as_sec": "039f589caf8cc3035c1e6385968391ceb3f300af853678d2926204ab366f24ac0a",
+   "key_pair_as_sec_uncompressed": "049f589caf8cc3035c1e6385968391ceb3f300af853678d2926204ab366f24ac0aa173b62e0ec123fc5641520eb4068e24883cee1a8367dbfc23cdccd70ee2e135",
+   "network": "Bitcoin testnet3",
+   "p2sh_segwit": "2N5W29Hmu4YQcTuhhh1ZR6kWx2YZc3tHDC5",
+   "p2sh_segwit_script": "00141cc558cf0fe8a0a1d99a645ae03cb0b05fcdd2bd",
+   "parent_fingerprint": "57f3ff57",
+   "private_key": "yes",
+   "public_pair_x": "72074306871684564231494713060715180251120365778523548577998369770819836750858",
+   "public_pair_x_hex": "9f589caf8cc3035c1e6385968391ceb3f300af853678d2926204ab366f24ac0a",
+   "public_pair_y": "73026813393901890802572718199560608746253246106782948942250275448403196567861",
+   "public_pair_y_hex": "a173b62e0ec123fc5641520eb4068e24883cee1a8367dbfc23cdccd70ee2e135",
+   "public_version": "tpubD8ud5hQvSR15KWZ3fhpnPnuzuKPE4JPhF65JPHJWzz9vNTPwP93AQLj2RfVb2hzUFaW9vACviTouzGYHaK2yaZb86Vj4oDAPUM29S6E76GQ",
+   "secret_exponent": "10175665611936536960212700543537984959143875691066257925291201954954158514549",
+   "secret_exponent_hex": "167f38fec0577b4fb9ac4a89e3ccff09546778014f28fb150715174dd70ba175",
+   "symbol": "XTN",
+   "tree_depth": "1",
+   "wallet_key": "tprv8cDawHNgJ3KQS3XFn4ABzPFtLHsHtyCnfnUX6mGDaiMXXy9AkkDaDr7AFVZgGFS7izpPiLW1xZptv9sx3Rafy2bCTbVWhw3J1Kuhmz5fL44",
+   "wif": "cNLS4BehAQRmja2H1ncswX48sRmvSR7LbHdLw3b4NoEnRkAL66Tb",
+   "wif_uncompressed": "91kppPobvndsv9PVYu2LFAXcmWBBJ61XikeEaYQ87JGozp5QE3c",
+   "y_parity": "odd"
+}
 #+end_src
 
 ** Create a hardended child key
 
 #+BEGIN_SRC sh :results replace code
-ku -n XTN -s "1'" tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fLzJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG
+ku --json -n XTN -s "1'" tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fLzJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG
 #+END_SRC
 
 #+RESULTS:
 #+begin_src sh
-input                        : tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fL\
-                                 zJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG
-network                      : Bitcoin testnet3
-symbol                       : XTN
-wallet key                   : tprv8cDawHNpdhrNbpJt239U99nymLa8F3T3DxAJLUDGMrKkgYssWKXiu5yx21GqRc\
-                                 5sLnD9gDX3L2bQoq9yJYaGCqoWZeGTEgp3aCtYGinZsXx
-public version               : tpubD8ud5hR4n5Y3VHLfugp4YZT6LN64QNdwoFm5czFZn889X38e8iMK5abpC7azAt\
-                                 pao1HJhrrqPpaUgM6NcDHmdmfBCgFotaAdKyzbtUZmBtA
-tree depth                   : 1
-fingerprint                  : bdf6282c
-parent f'print               : 57f3ff57
-child index                  : 1H (2147483649)
-chain code                   : 73f0deb781fa87af7249602b2696dea5bf02bfdf190d6abb2350a559b1c2cec3
-private key                  : yes
-secret exponent              : 61602875498570315404210565602467016016390744731637440902025864616119025455717
- hex                         : 8831fdeefe47e6faa5db89f20a57ec836d40946111ca96473452f5d0021ad265
-wif                          : cS9SuYJfwciEEwSvjHieZhCTw3qFjuBNGcvw8LfGFs4pmVW5iFaV
- uncompressed                : 92cu67BoS4ZT7L8gpC3Bn1xAGsV9n4fbj4A3kMKBhyf2JsKipvm
-public pair x                : 23864505531964240755788879542663499118613642943918826122885445375128926076495
-public pair y                : 47934172485028799614953021791364156950491061801166306905448190132602651060854
- x as hex                    : 34c2d4db05d3704eb7d3df9342514439f0cd833f4f96b8fae2120416de62be4f
- y as hex                    : 69f9c7ba1886bae42d061bb7c1bd05fa0dcbf31705a24bcfb668410a55dcaa76
-y parity                     : even
-key pair as sec              : 0234c2d4db05d3704eb7d3df9342514439f0cd833f4f96b8fae2120416de62be4f
- uncompressed                : 0434c2d4db05d3704eb7d3df9342514439f0cd833f4f96b8fae2120416de62be4f\
-                                 69f9c7ba1886bae42d061bb7c1bd05fa0dcbf31705a24bcfb668410a55dcaa76
-hash160                      : bdf6282cf5d70097bf564dd780294d3ad9fab1e8
- uncompressed                : e621be54a34e967ade0d3fcdd111a71de534a5f9
-Bitcoin address              : mxqNtbPYwcMLpx2DxzZPcAPTSQ9E6PaGfp
-Bitcoin address uncompressed : n2Vn8iJv8jLodWmpTbLQ1asu6nYWJcdKDT
-Bitcoin segwit address       : tb1qhhmzst846uqf006kfhtcq22d8tvl4v0gn5gypv
-p2sh segwit                  : 2MtmgJNGkiYHvocFr2kt7XFsi2Lfo81VCNN
- corresponding p2sh script   : 0014bdf6282cf5d70097bf564dd780294d3ad9fab1e8
+{
+   "XTN_address": "mxqNtbPYwcMLpx2DxzZPcAPTSQ9E6PaGfp",
+   "XTN_address_segwit": "tb1qhhmzst846uqf006kfhtcq22d8tvl4v0gn5gypv",
+   "XTN_address_uncompressed": "n2Vn8iJv8jLodWmpTbLQ1asu6nYWJcdKDT",
+   "address": "mxqNtbPYwcMLpx2DxzZPcAPTSQ9E6PaGfp",
+   "address_segwit": "tb1qhhmzst846uqf006kfhtcq22d8tvl4v0gn5gypv",
+   "address_uncompressed": "n2Vn8iJv8jLodWmpTbLQ1asu6nYWJcdKDT",
+   "chain_code": "73f0deb781fa87af7249602b2696dea5bf02bfdf190d6abb2350a559b1c2cec3",
+   "child_index": "1H (2147483649)",
+   "fingerprint": "bdf6282c",
+   "hash160": "bdf6282cf5d70097bf564dd780294d3ad9fab1e8",
+   "hash160_uncompressed": "e621be54a34e967ade0d3fcdd111a71de534a5f9",
+   "input": "tprv8ZgxMBicQKsPfLqpm9iFzu7cTV2sU9o6aB9BUW66rPSNjJaozmmY9WbzLCo1fLzJMjh2z9hiL7nKCHjutuq7ps5v8m1gkv2KDWSDX3RvwCG",
+   "key_pair_as_sec": "0234c2d4db05d3704eb7d3df9342514439f0cd833f4f96b8fae2120416de62be4f",
+   "key_pair_as_sec_uncompressed": "0434c2d4db05d3704eb7d3df9342514439f0cd833f4f96b8fae2120416de62be4f69f9c7ba1886bae42d061bb7c1bd05fa0dcbf31705a24bcfb668410a55dcaa76",
+   "network": "Bitcoin testnet3",
+   "p2sh_segwit": "2MtmgJNGkiYHvocFr2kt7XFsi2Lfo81VCNN",
+   "p2sh_segwit_script": "0014bdf6282cf5d70097bf564dd780294d3ad9fab1e8",
+   "parent_fingerprint": "57f3ff57",
+   "private_key": "yes",
+   "public_pair_x": "23864505531964240755788879542663499118613642943918826122885445375128926076495",
+   "public_pair_x_hex": "34c2d4db05d3704eb7d3df9342514439f0cd833f4f96b8fae2120416de62be4f",
+   "public_pair_y": "47934172485028799614953021791364156950491061801166306905448190132602651060854",
+   "public_pair_y_hex": "69f9c7ba1886bae42d061bb7c1bd05fa0dcbf31705a24bcfb668410a55dcaa76",
+   "public_version": "tpubD8ud5hR4n5Y3VHLfugp4YZT6LN64QNdwoFm5czFZn889X38e8iMK5abpC7azAtpao1HJhrrqPpaUgM6NcDHmdmfBCgFotaAdKyzbtUZmBtA",
+   "secret_exponent": "61602875498570315404210565602467016016390744731637440902025864616119025455717",
+   "secret_exponent_hex": "8831fdeefe47e6faa5db89f20a57ec836d40946111ca96473452f5d0021ad265",
+   "symbol": "XTN",
+   "tree_depth": "1",
+   "wallet_key": "tprv8cDawHNpdhrNbpJt239U99nymLa8F3T3DxAJLUDGMrKkgYssWKXiu5yx21GqRc5sLnD9gDX3L2bQoq9yJYaGCqoWZeGTEgp3aCtYGinZsXx",
+   "wif": "cS9SuYJfwciEEwSvjHieZhCTw3qFjuBNGcvw8LfGFs4pmVW5iFaV",
+   "wif_uncompressed": "92cu67BoS4ZT7L8gpC3Bn1xAGsV9n4fbj4A3kMKBhyf2JsKipvm",
+   "y_parity": "even"
+}
 #+end_src
 
 
