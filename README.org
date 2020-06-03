@@ -1,7 +1,7 @@
-#+TITLE: KU usage
+#+TITLE: Pycoin ku usage
 #+OPTIONS: ^:nil
-#+PROPERTY: header-args:sh :session *shell ku-usage sh* :results silent raw
-#+PROPERTY: header-args:python :session *shell ku-usage python* :results silent raw
+#+PROPERTY: header-args:sh :session *shell pycoin-ku-usage sh* :results silent raw
+#+PROPERTY: header-args:python :session *shell pycoin-ku-usage python* :results silent raw
 
 ** System environment
 
